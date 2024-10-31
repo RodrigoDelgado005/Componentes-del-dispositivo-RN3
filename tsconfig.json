@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react-native",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "types": [
+      "react",
+      "react-native",
+      "expo"
+    ],
+    "baseUrl": ".", // Configuración base para el alias
+    "paths": {
+      "@/*": ["app/*"] // Define el alias @ para apuntar a la carpeta app
+    }
+  },
+  "include": [
+    "app/**/*",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "extends": "expo/tsconfig.base"
+}
